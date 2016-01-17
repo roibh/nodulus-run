@@ -1,0 +1,17 @@
+[
+    {
+    "name": "header",
+    "path": "/controls/header.js",
+    "template": "/controls/header.html"
+    },
+    {
+    "name": "footer",
+    "path": "/controls/footer.js",
+    "template": "/controls/footer.html"
+    },
+     {
+    "name": "meta",
+    "path": "/controls/meta.js",
+    "template": "/controls/meta.html"
+    }
+]
