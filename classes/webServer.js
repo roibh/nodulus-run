@@ -7,8 +7,7 @@
             activeport = process.env.PORT;
        
         server.listen(activeport, function () {
-            
-            console.log('nodulus is listening on port ' + activeport);
+            console.log(">>>>> application active on port:" + activeport);             
             callback(app);
             
             

@@ -1,5 +1,5 @@
 ﻿ 
-console.log("good");
+console.log(">>>>> starting application");
 var express = require('express');
 global.appRoot = __dirname;
 
@@ -16,31 +16,25 @@ var config = require('./classes/config.js');
 var SocketUse = require('./classes/socket.js');
 var webServer = require('./classes/webServer.js');
 var api = require('./classes/api.js');
+var cache = require("./classes/cache.js");
  
 var EventEmitter = require('events').EventEmitter;
 global.eventServer = new EventEmitter();
-
+global.cache = cache;
 var app = express();
 
 
 var http = require("http").createServer(app);
 var io = require("socket.io")(http);
-//http.listen(8080, "127.0.0.1");
-
-
-
-
  
-
-
 var server = require('http').Server(app);
 webServer.start(server, app, function () {
     
-    var socket = require('socket.io')(server);
-    var io = socket.listen(server);
-    
-    console.log("socket listen on:" + io)
-    SocketUse(io);
+    // var socket = require('socket.io')(server);
+    // var io = socket.listen(server);
+    // 
+    // console.log("socket listen on:" + io)
+    // SocketUse(io);
 
 });
 //app.use('/Users', require('./routes/users.js'));
@@ -94,6 +88,7 @@ app.use(function (req, res, next) {
 }
 );
 
+console.log(">>>>> initialize nodulus middleware");
 app.use(require('nodulus-run'));
 
 app.use('/', express.static(__dirname + '/public'));

@@ -4,14 +4,14 @@ var model = {"value": "xxxxxxxxxxxxxxx"}
 
 
 
-module.exports.init = function(context, control, callback){
+module.exports.init = function(context, controlContext, callback){
     
     dal.connect(function(err, db){
         
         db.collection("users").find({}).toArray(function(err, data){
             
-            control.data = data;
-            callback();
+            controlContext.data = data;
+            callback(controlContext);
             
         });
         

@@ -25,6 +25,7 @@
     "media-typer": "^0.3.0",
     "moment": "^2.10.6",
     "mongodb": "^2.0.40",
+    "node-linq": "0.0.5",
     "node-uuid": "^1.4.7",
     "nodulus-run": "^1.0.6",
     "oauth": "^0.9.14",

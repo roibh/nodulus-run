@@ -37,6 +37,7 @@
     <Content Include="config\site.json" />
     <Content Include="pagecontrols\control1.html" />
     <Content Include="pagecontrols\control2.html" />
+    <Content Include="pagecontrols\sub\control1.html" />
     <Content Include="pages\index.html" />
     <Compile Include="controls\controlsplaceholder.js" />
     <Compile Include="controls\footer.js" />
@@ -46,6 +47,7 @@
     <Compile Include="masterpages\master.js" />
     <Compile Include="pagecontrols\control1.js" />
     <Compile Include="pagecontrols\control2.js" />
+    <Compile Include="pagecontrols\sub\control1.js" />
     <Compile Include="pages\index.js" />
     <Compile Include="public\bower_components\bootstrap\dist\js\bootstrap.js" />
     <Compile Include="public\bower_components\bootstrap\dist\js\bootstrap.min.js" />
@@ -297,6 +299,7 @@
     <Folder Include="controls\" />
     <Folder Include="masterpages\" />
     <Folder Include="pagecontrols\" />
+    <Folder Include="pagecontrols\sub\" />
     <Folder Include="pages\" />
     <Folder Include="public" />
     <Folder Include="public\bower_components\" />

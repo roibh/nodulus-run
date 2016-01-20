@@ -2,10 +2,10 @@
 
  
  
-      <% for(var i=0; i<data.length; i++) {%>
-          
+      <% for(var i=0; i<data.controls.length; i++) {%>
+          <%=data.controls[i].name%>
  
-               <%-data[i].renderResult%>
+               <%-data.controls[i].renderResult%>
               <%}%>
       
       

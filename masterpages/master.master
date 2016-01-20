@@ -17,7 +17,7 @@
       <!-- Static navbar -->
  <run:header id="header"></run:header>
  
-     <placeholder id="header"></placeholder>qqqqqqqqqqqqqqqqqqqqqq
+     <placeholder id="header"></placeholder>
 
 <placeholder id="body"></placeholder>
  

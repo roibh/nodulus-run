@@ -1,5 +1,6 @@
 
-<run::master masterpagefile="masterpages/master.master">
+<run::master masterpagefile="masterpages/master.master" />
+
     <run::content id="header">
         <div class="jumbotron">
             <h1><%-data.Name%></h1>
@@ -11,22 +12,29 @@
 
     </run::content>
     <run::content id="body">
-
-
+        
+        
+ <run:pagecontrols_sub_control1 id="testme" Title="roiki"></run:pagecontrols_sub_control1>
+ 
+ 
+<!-- -->
         <!-- Main component for a primary marketing message or call to action -->
+     
+     
+     
+     <div class="panel panel-primary col-md-6">
+    <div class="panel-heading">Left</div>
+    <div class="panel-body"><p><run:controlsplaceholder  id="left1" alias="left" visible="false"></run:controlsplaceholder></p></div>
+    </div> 
+    
+    
+  
+       <div class="panel panel-primary col-md-6">
+    <div class="panel-heading">Right</div>
+    <div class="panel-body"><p><run:controlsplaceholder  id="right1" alias="right" visible="false"></run:controlsplaceholder></p></div>
+    </div> 
+  
       
-
-        <div class="panel panel-primary">
-            <div class="panel-heading"></div>
-            <div class="panel-body">
- 
-
-
-
- 
-            </div>
-            <div class="panel-footer"> <run:controlsplaceholder yyy="2" id="footerPlaceholder"></run:controlsplaceholder></div>
-        </div>
 
 
 
@@ -34,5 +42,9 @@
 
     <run::content id="footer">
         <run:footer yyy="2" id="thefooter"></run:footer>
-    </run::content>
+        
+        
+          <!--<run:controlsplaceholder  id="main2" alias="bottom" visible="false"></run:controlsplaceholder>-->
+          
+    </run::content> 
 

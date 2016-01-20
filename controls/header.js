@@ -1,10 +1,10 @@
 var dal = require("../classes/dal.js");
-module.exports.init = function(context, control, callback){
-    this.control = control;
+module.exports.init = function(context, controlContext, callback){
+    this.control = controlContext.control;
     dal.connect(function(err, db){        
         db.collection("Menu").find({}).toArray(function(err, data){            
-            control.data = data;
-            callback();            
+            controlContext.data = data;
+            callback(controlContext);            
         });        
     });    
 }
