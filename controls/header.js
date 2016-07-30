@@ -1,4 +1,4 @@
-var dal = require("../classes/dal.js");
+var dal = require("@nodulus/data");
 module.exports.init = function(context, controlContext, callback){
     this.control = controlContext.control;
     dal.connect(function(err, db){        

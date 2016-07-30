@@ -1,12 +1,12 @@
-var dal = require("../classes/dal.js");
-
+var dal = require("@nodulus/data");
+var cache = require("@nodulus/cache").cache;
 
 
 
 
 module.exports.init = function (context, controlContext, callback) {
 
-cache.get("PageControlsTypes", function (PageControlsTypes) {
+cache.getCollection("PageControlsTypes",true, function (PageControlsTypes) {
     //cache.get("PlaceHolders", "Alias", function (PlaceHolders) {
       //  var placeHolderId = PlaceHolders[controlContext.attributes.alias]._id;
         dal.connect(function (err, db) {

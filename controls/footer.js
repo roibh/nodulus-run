@@ -1,4 +1,4 @@
-var dal = require("../classes/dal.js");
+var dal = require("@nodulus/data");
 
 var model = {"value": "xxxxxxxxxxxxxxx"}
 

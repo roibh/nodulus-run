@@ -1,4 +1,4 @@
-var dal = require("../classes/dal.js");
+var dal = require("@nodulus/data");
 module.exports.init = function(context, controlContext, callback){
       
     if(controlContext.data === undefined)

@@ -1,0 +1,13 @@
+{
+    "name": "nodulus",
+    "url": "",
+    "port": "4000",
+    "appRoot": "/",
+    "enableSockets": true,
+    "database": {
+        "mongodb": {
+            "useObjectId": false,
+            "host": "mongodb://localhost:27017/nodulussite"
+        }
+    } 
+}
