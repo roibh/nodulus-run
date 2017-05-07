@@ -1,10 +1,9 @@
-var dal = require("@nodulus/data");
-
-module.exports.init = function (context, page, callback) {
-    dal.connect(function (err, db) {        
-        db.collection("Menu").find({"Path": context.req.originalUrl}).toArray(function (err, data) {            
-            page.data = data[0];
-            callback();            
-        });        
-    });
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function init(context, page) {
+    page.data = {
+        Name: 'roi1'
+    };
 }
+exports.init = init;
+//# sourceMappingURL=index.js.map

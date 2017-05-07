@@ -5,7 +5,7 @@
             "name": "Launch",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/app.js",
+            "program": "${workspaceRoot}/index.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
@@ -15,10 +15,11 @@
                 "--nolazy"
             ],
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "debug",
+                "debug": "@nodulus"
             },
-            "externalConsole": false,
-            "sourceMaps": false,
+            "console": "internalConsole",
+            "sourceMaps": true,
             "outDir": null
         },
         {

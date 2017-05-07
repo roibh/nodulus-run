@@ -1,12 +1,11 @@
-var dal = require("@nodulus/data");
-module.exports.init = function(context, controlContext, callback){
-      
-    if(controlContext.data === undefined)
-    {
-        controlContext.data = {"Title": "Default title", "Text": "default text"}
+
+module.exports.init = function (context, controlContext) {
+
+    if (controlContext.data === undefined) {
+        controlContext.data = { "Title": "Default title", "Text": "default text" }
     }
-      callback(controlContext);   
-      
+    return controlContext;
+
     // this.control = controlContext.control;
     // dal.connect(function(err, db){        
     //     db.collection("Menu").find({}).toArray(function(err, data){            

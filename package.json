@@ -1,20 +1,18 @@
 {
   "name": "run",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "run",
-  "author": {
-    "name": "roi ben haim",
-    "email": "roi@ewave.co.il"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@nodulus/cache": "*",
-    "@nodulus/config": "*",
-    "@nodulus/core": "*",
-    "@nodulus/data": "*",
-    "@nodulus/run": "*"
+    "@nodulus/core": "^2.0.6",
+    "@nodulus/run": "^1.0.8"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.2"
   }
 }

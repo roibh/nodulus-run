@@ -1,22 +1,30 @@
 <!doctype html>
 <html lang="en">
- 
+
 <head>
-    <%=data.Title%>
     <run:controls_meta id="meta1"></run:controls_meta>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .framed {
+            border: 1px solid green;
+            background-color: green;
+            color: white;
+            font-family: 'arial';
+            padding: 15px;
+            margin: 15px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <run:controls_header id="header1"></run:controls_header>
         <run::placeholder id="header"></run::placeholder>
-  
-
-        
-
         <run::placeholder id="body"></run::placeholder>
         <run::placeholder id="footer"></run::placeholder>
+        <run:controls_footer id="footer1"></run:controls_footer>
+
     </div>
-  
+
 </body>
+
 </html>
